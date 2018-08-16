@@ -2,8 +2,7 @@ defmodule ChatWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ChatWeb.RoomChannel
-
+  channel "water_cooler:*", ChatWeb.WaterCoolerChannel
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
   # transport :longpoll, Phoenix.Transports.LongPoll
